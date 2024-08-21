@@ -2,7 +2,6 @@
 using CleanArchitecture.Application.Common.Abstracts.Persistence;
 using CleanArchitecture.Infrastructure.Caching;
 using CleanArchitecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
-using CleanArchitecture.Infrastructure.Serilization;
 using CleanArchitecture.Persistence.EF;
 using CleanArchitecture.Persistence.EF.Interceptors;
 using Microsoft.EntityFrameworkCore;
@@ -24,7 +23,6 @@ namespace CleanArchitecture.WebAPI.Configuration
                .AddInterceptors(sp.GetServices<ISaveChangesInterceptor>()));
             services.AddScoped<ISaveChangesInterceptor, AuditableEntityInterceptor>();
             services.AddScoped<ISaveChangesInterceptor, DispatchDomainEventsInterceptor>();
-            services.AddSingleton<ISerializer, NewtonsoftJsonSerializer>();
             services.ConfigureOptions<RedisOptionsSetup>();
 
 
