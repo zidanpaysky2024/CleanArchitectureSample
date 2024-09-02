@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Architecture.WebAPI.Configuration
+namespace CleanArchitecture.WebAPI.Configuration
 {
     public interface IServiceInstaller
     {

@@ -1,7 +1,7 @@
-﻿using Architecture.Application.Common.Messaging;
+﻿using CleanArchitecture.Application.Common.Messaging;
 using System.Diagnostics;
 
-namespace Architecture.Application.Common.Behaviours
+namespace CleanArchitecture.Application.Common.Behaviours
 {
     public class LoggingPreprocessorBehaviour<TRequest> : IRequestPreProcessor<TRequest>
         where TRequest : notnull, IBaseQuery

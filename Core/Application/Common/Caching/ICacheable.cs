@@ -1,4 +1,4 @@
-﻿namespace Architecture.Application.Common.Caching
+﻿namespace CleanArchitecture.Application.Common.Caching
 {
     public interface ICacheable
     {

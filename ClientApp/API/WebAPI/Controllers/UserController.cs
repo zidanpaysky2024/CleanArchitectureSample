@@ -1,9 +1,9 @@
-﻿using Architecture.Application.Users.Commands.CreateUser;
-using Architecture.Application.Users.Commands.Login;
-using Architecture.WebAPI.Common;
+﻿using CleanArchitecture.Application.Users.Commands.CreateUser;
+using CleanArchitecture.Application.Users.Commands.Login;
+using CleanArchitecture.WebAPI.Common;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Architecture.WebAPI.Controllers
+namespace CleanArchitecture.WebAPI.Controllers
 {
     public class UserController : BaseApiController
     {

@@ -1,7 +1,7 @@
-﻿using Architecture.Application.Common.Abstracts.Account;
+﻿using CleanArchitecture.Application.Common.Abstracts.Account;
 using FluentValidation;
 
-namespace Architecture.Application.Users.Commands.Login
+namespace CleanArchitecture.Application.Users.Commands.Login
 {
     public class LoginCommandValidator : AbstractValidator<LoginCommand>
     {

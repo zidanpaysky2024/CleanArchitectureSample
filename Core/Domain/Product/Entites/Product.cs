@@ -1,6 +1,6 @@
-﻿using Architecture.Domain.Common;
+﻿using CleanArchitecture.Domain.Common;
 
-namespace Architecture.Domain.Product.Entites
+namespace CleanArchitecture.Domain.Product.Entites
 {
     public class Product : AuditableEntity, IAggregateRoot
     {

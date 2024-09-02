@@ -1,12 +1,12 @@
-﻿using Architecture.Application.Common.Abstracts.Persistence;
-using Architecture.Application.Common.Messaging;
-using Architecture.Application.Common.Models;
-using Architecture.Application.Products.Commands.AddProduct;
-using Architecture.Domain.Constants;
-using Architecture.Domain.Product.Entites;
-using Architecture.Application.Common.Security;
+﻿using CleanArchitecture.Application.Common.Security;
+using CleanArchitecture.Domain.Product.Entites;
+using CleanArchitecture.Domain.Constants;
+using CleanArchitecture.Application.Common.Abstracts.Persistence;
+using CleanArchitecture.Application.Common.Messaging;
+using CleanArchitecture.Application.Products.Commands.AddProduct;
+using CleanArchitecture.Application.Common.Models;
 
-namespace Architecture.Application.Products.Commands.UpdateProduct
+namespace CleanArchitecture.Application.Products.Commands.UpdateProduct
 {
     #region Request
 

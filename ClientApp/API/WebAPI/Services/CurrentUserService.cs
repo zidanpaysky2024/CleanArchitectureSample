@@ -1,7 +1,7 @@
-﻿using Architecture.Application.Common.Abstracts.Account;
+﻿using CleanArchitecture.Application.Common.Abstracts.Account;
 using System.Security.Claims;
 
-namespace Architecture.WebAPI.Services
+namespace CleanArchitecture.WebAPI.Services
 {
     public class CurrentUser : ICurrentUser
     {

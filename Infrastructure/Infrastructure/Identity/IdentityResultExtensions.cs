@@ -1,8 +1,8 @@
-﻿using Architecture.Application.Common.Errors;
-using Architecture.Application.Common.Messaging;
+﻿using CleanArchitecture.Application.Common.Errors;
+using CleanArchitecture.Application.Common.Messaging;
 using Microsoft.AspNetCore.Identity;
 
-namespace Architecture.Infrastructure.Identity
+namespace CleanArchitecture.Infrastructure.Identity
 {
     public static class IdentityResultExtensions
     {

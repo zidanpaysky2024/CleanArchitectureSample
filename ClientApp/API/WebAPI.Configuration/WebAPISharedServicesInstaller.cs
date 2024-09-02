@@ -1,14 +1,14 @@
-﻿using Architecture.Application.Common.Abstracts.Business;
-using Architecture.Application.Common.Abstracts.Persistence;
-using Architecture.Application.Common.Messaging;
-using Architecture.Application.Common.Exceptions;
+﻿using CleanArchitecture.Application.Common.Exceptions;
 using Common.DependencyInjection.Extensions;
 using FluentValidation;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
+using CleanArchitecture.Application.Common.Abstracts.Persistence;
+using CleanArchitecture.Application.Common.Messaging;
+using CleanArchitecture.Application.Common.Abstracts.Business;
 
-namespace Architecture.WebAPI.Configuration
+namespace CleanArchitecture.WebAPI.Configuration
 {
     public class WebApiSharedServicesInstaller : IServiceInstaller
     {

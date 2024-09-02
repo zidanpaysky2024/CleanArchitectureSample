@@ -1,6 +1,6 @@
-﻿using Architecture.Domain.Common;
+﻿using CleanArchitecture.Domain.Common;
 
-namespace Architecture.Domain.Product.Events
+namespace CleanArchitecture.Domain.Product.Events
 {
     public record ProductCreatedEvent(Entites.Product Product) : BaseDomainEvent
     {

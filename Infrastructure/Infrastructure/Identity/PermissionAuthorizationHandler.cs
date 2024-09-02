@@ -1,8 +1,8 @@
-﻿using Architecture.Domain.Constants;
+﻿using CleanArchitecture.Domain.Constants;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
 
-namespace Architecture.Infrastructure.Identity
+namespace CleanArchitecture.Infrastructure.Identity
 {
     public class PermissionAuthorizationHandler : AuthorizationHandler<PermissionRequirement>
     {

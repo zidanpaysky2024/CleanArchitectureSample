@@ -1,4 +1,4 @@
-﻿namespace Architecture.Application.Common.Abstracts.Business
+﻿namespace CleanArchitecture.Application.Common.Abstracts.Business
 {
     public interface IService
     {

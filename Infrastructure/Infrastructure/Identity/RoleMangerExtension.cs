@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Architecture.Infrastructure.Identity
+namespace CleanArchitecture.Infrastructure.Identity
 {
     internal static class RoleMangerExtension
     {

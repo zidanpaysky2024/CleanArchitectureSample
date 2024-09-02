@@ -1,4 +1,4 @@
-﻿namespace Architecture.Application.Users.Commands.Dtos
+﻿namespace CleanArchitecture.Application.Users.Commands.Dtos
 {
     public class UserDto
     {

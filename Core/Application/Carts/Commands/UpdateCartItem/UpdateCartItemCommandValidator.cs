@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Architecture.Application.Carts.Commands.UpdateCartItem
+namespace CleanArchitecture.Application.Carts.Commands.UpdateCartItem
 {
     public class UpdateCartItemCommandValidator : AbstractValidator<UpdateCartItemCommand>
     {

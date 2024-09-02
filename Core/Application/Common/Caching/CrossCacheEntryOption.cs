@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace Architecture.Application.Common.Caching
+namespace CleanArchitecture.Application.Common.Caching
 {
     public class CrossCacheEntryOption
     {

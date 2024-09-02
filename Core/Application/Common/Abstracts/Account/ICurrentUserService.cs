@@ -1,4 +1,4 @@
-﻿namespace Architecture.Application.Common.Abstracts.Account
+﻿namespace CleanArchitecture.Application.Common.Abstracts.Account
 {
     public interface ICurrentUser
     {

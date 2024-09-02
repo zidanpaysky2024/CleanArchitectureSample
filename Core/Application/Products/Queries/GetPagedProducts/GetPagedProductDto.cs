@@ -1,6 +1,6 @@
-﻿using Architecture.Domain.Product.Entites;
+﻿using CleanArchitecture.Domain.Product.Entites;
 
-namespace Architecture.Application.Products.Queries.GetPagedProducts
+namespace CleanArchitecture.Application.Products.Queries.GetPagedProducts
 {
     public class GetPagedProductDto
     {

@@ -1,7 +1,7 @@
-﻿using Architecture.Application.Carts.IEntitySets;
-using Architecture.Domain.Cart.Entities;
+﻿using CleanArchitecture.Application.Carts.IEntitySets;
+using CleanArchitecture.Domain.Cart.Entities;
 
-namespace Architecture.Persistence.EF.EntitySets
+namespace CleanArchitecture.Persistence.EF.EntitySets
 {
     public class CartItemSet : EntitySet<CartItem>, ICartItemSet
     {

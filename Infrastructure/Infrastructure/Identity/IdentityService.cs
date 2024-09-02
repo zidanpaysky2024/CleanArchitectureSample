@@ -1,12 +1,12 @@
-﻿using Architecture.Application.Common.Abstracts.Account;
-using Architecture.Application.Common.Errors;
-using Architecture.Application.Common.Messaging;
-using Architecture.Application.Users.Commands.Dtos;
+﻿using CleanArchitecture.Application.Common.Abstracts.Account;
+using CleanArchitecture.Application.Common.Errors;
+using CleanArchitecture.Application.Common.Messaging;
+using CleanArchitecture.Application.Users.Commands.Dtos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace Architecture.Infrastructure.Identity
+namespace CleanArchitecture.Infrastructure.Identity
 {
     public class IdentityService : IIdentityService
     {

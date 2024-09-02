@@ -1,7 +1,7 @@
-﻿using Architecture.Application.Common.Abstracts.Persistence;
-using Architecture.Domain.Product.Entites;
+﻿using CleanArchitecture.Application.Common.Abstracts.Persistence;
+using CleanArchitecture.Domain.Product.Entites;
 
-namespace Architecture.Application.Products.IEntitySets
+namespace CleanArchitecture.Application.Products.IEntitySets
 {
     public interface IProductSet : IEntitySet<Product>
     {

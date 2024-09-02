@@ -1,6 +1,6 @@
-﻿using Architecture.Application.Common.Caching;
+﻿using CleanArchitecture.Application.Common.Caching;
 
-namespace Architecture.Application.Common.Abstracts.Caching;
+namespace CleanArchitecture.Application.Common.Abstracts.Caching;
 public interface ICrossCacheService
 {
     Task<T?> GetCacheAsync<T>(string cacheKey,

@@ -1,4 +1,4 @@
-﻿namespace Architecture.Domain.Common
+﻿namespace CleanArchitecture.Domain.Common
 {
     public abstract class AuditableEntity : Entity, IAuditableEntity
     {

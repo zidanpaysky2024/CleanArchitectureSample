@@ -1,6 +1,6 @@
-﻿using Architecture.Application.Common.Caching;
+﻿using CleanArchitecture.Application.Common.Caching;
 
-namespace Architecture.Application.Common.Extensions
+namespace CleanArchitecture.Application.Common.Extensions
 {
     public static class CacheAttributeExtension
     {

@@ -1,12 +1,11 @@
-﻿using Architecture.Application.Carts;
-using Architecture.Application.Common.Abstracts.Persistence;
-using Architecture.Application.Common.Caching;
-using Architecture.Application.Common.Messaging;
-using Architecture.Application.Common.Models;
-using Architecture.Domain.Constants;
-using Architecture.Application.Common.Security;
+﻿using CleanArchitecture.Application.Common.Security;
+using CleanArchitecture.Application.Common.Abstracts.Persistence;
+using CleanArchitecture.Application.Common.Caching;
+using CleanArchitecture.Application.Common.Messaging;
+using CleanArchitecture.Application.Common.Models;
+using CleanArchitecture.Domain.Constants;
 
-namespace Architecture.Application.Carts.Commands.RemoveCartItem
+namespace CleanArchitecture.Application.Carts.Commands.RemoveCartItem
 {
     #region Request
     [Authorize(Policy = Permissions.Cart.Delete)]

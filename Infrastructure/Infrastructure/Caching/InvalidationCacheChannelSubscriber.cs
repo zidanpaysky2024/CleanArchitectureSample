@@ -1,7 +1,7 @@
-﻿using Architecture.Application.Common.Abstracts.Caching;
+﻿using CleanArchitecture.Application.Common.Abstracts.Caching;
 using Microsoft.Extensions.Hosting;
 
-namespace Architecture.Infrastructure.Caching
+namespace CleanArchitecture.Infrastructure.Caching
 {
     public class InvalidationCacheChannelSubscriber : IHostedService
     {

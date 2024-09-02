@@ -1,5 +1,5 @@
-﻿using Architecture.Application.Common.Abstracts.Caching;
-using Architecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
+﻿using CleanArchitecture.Application.Common.Abstracts.Caching;
+using CleanArchitecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
 using Common.Operation;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
@@ -7,7 +7,7 @@ using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 
-namespace Architecture.Infrastructure.Caching;
+namespace CleanArchitecture.Infrastructure.Caching;
 public class DistributedCacheService : IDistributedCacheService
 {
     #region Dependencies

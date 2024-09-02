@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 
-namespace Architecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
+namespace CleanArchitecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
 
 #region Redis Option
 public class RedisOptions

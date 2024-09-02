@@ -1,6 +1,6 @@
-﻿using Architecture.Domain.Common;
+﻿using CleanArchitecture.Domain.Common;
 
-namespace Architecture.Domain.Cart.Entities
+namespace CleanArchitecture.Domain.Cart.Entities
 {
     public class Cart : AuditableEntity, IAggregateRoot
     {

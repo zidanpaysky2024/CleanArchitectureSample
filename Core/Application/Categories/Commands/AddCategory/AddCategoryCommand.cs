@@ -1,12 +1,12 @@
-﻿using Architecture.Application.Common.Abstracts.Persistence;
-using Architecture.Application.Common.Messaging;
-using Architecture.Application.Common.Models;
-using Architecture.Domain.Constants;
-using Architecture.Domain.Product.Entites;
-using AutoMapper;
-using Architecture.Application.Common.Security;
+﻿using AutoMapper;
+using CleanArchitecture.Application.Common.Security;
+using CleanArchitecture.Domain.Product.Entites;
+using CleanArchitecture.Domain.Constants;
+using CleanArchitecture.Application.Common.Abstracts.Persistence;
+using CleanArchitecture.Application.Common.Messaging;
+using CleanArchitecture.Application.Common.Models;
 
-namespace Architecture.Application.Categories.Commands.AddCategory
+namespace CleanArchitecture.Application.Categories.Commands.AddCategory
 {
     #region Request
     [Authorize(Policy = Permissions.Product.AddCategory)]

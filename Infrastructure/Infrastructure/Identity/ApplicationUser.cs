@@ -1,7 +1,7 @@
-﻿using Architecture.Domain.Common;
+﻿using CleanArchitecture.Domain.Common;
 using Microsoft.AspNetCore.Identity;
 
-namespace Architecture.Infrastructure.Identity
+namespace CleanArchitecture.Infrastructure.Identity
 {
     public class ApplicationUser : IdentityUser, IAuditableEntity
     {

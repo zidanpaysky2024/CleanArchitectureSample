@@ -1,6 +1,6 @@
-﻿using Architecture.Application.Common.Abstracts.ClinetInfo;
+﻿using CleanArchitecture.Application.Common.Abstracts.ClinetInfo;
 
-namespace Architecture.WebAPI.Services
+namespace CleanArchitecture.WebAPI.Services
 {
     public class CurrentRequestInfoService : ICurrentRequestInfoService
     {

@@ -1,8 +1,8 @@
-﻿using Architecture.Domain.Cart.Entities;
+﻿using CleanArchitecture.Domain.Cart.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Architecture.Persistence.EF.Configurations
+namespace CleanArchitecture.Persistence.EF.Configurations
 {
     public class CartItemConfiguration : IEntityTypeConfiguration<CartItem>
     {

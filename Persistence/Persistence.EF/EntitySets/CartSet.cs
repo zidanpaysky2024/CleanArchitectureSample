@@ -1,10 +1,10 @@
-﻿using Architecture.Application.Carts.IEntitySets;
-using Architecture.Domain.Cart.Entities;
-using Architecture.Domain.Product.Entites;
-using Architecture.Persistence.EF;
+﻿using CleanArchitecture.Application.Carts.IEntitySets;
+using CleanArchitecture.Domain.Cart.Entities;
+using CleanArchitecture.Domain.Product.Entites;
+using CleanArchitecture.Persistence.EF;
 using Microsoft.EntityFrameworkCore;
 
-namespace Architecture.Persistence.EF.EntitySets
+namespace CleanArchitecture.Persistence.EF.EntitySets
 {
     public class CartSet : EntitySet<Cart>, ICartSet
     {

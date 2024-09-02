@@ -1,7 +1,7 @@
-﻿using Architecture.Application.Common.Abstracts.Persistence;
-using Architecture.Domain.Product.Entites;
+﻿using CleanArchitecture.Application.Common.Abstracts.Persistence;
+using CleanArchitecture.Domain.Product.Entites;
 
-namespace Architecture.Application.Categories.IEntitySets
+namespace CleanArchitecture.Application.Categories.IEntitySets
 {
     public interface ICategorySet : IEntitySet<Category>
     {

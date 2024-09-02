@@ -1,6 +1,6 @@
-﻿using Architecture.Domain.Common;
+﻿using CleanArchitecture.Domain.Common;
 
-namespace Architecture.Application.Common.Abstracts.DomainEvent
+namespace CleanArchitecture.Application.Common.Abstracts.DomainEvent
 {
     public interface IDomainEventService
     {

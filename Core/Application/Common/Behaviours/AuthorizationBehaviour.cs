@@ -1,11 +1,11 @@
-﻿using Architecture.Application.Common.Abstracts.Account;
-using Architecture.Application.Common.Errors;
-using Architecture.Application.Common.Messaging;
-using Architecture.Application.Common.Security;
-using Architecture.Domain.Constants;
+﻿using CleanArchitecture.Application.Common.Abstracts.Account;
+using CleanArchitecture.Application.Common.Errors;
+using CleanArchitecture.Application.Common.Messaging;
+using CleanArchitecture.Application.Common.Security;
+using CleanArchitecture.Domain.Constants;
 using System.Reflection;
 
-namespace Architecture.Application.Common.Behaviours
+namespace CleanArchitecture.Application.Common.Behaviours
 {
     public class AuthorizationBehaviour<TRequest, TResponse> : IRequestResponsePipeline<TRequest, TResponse>
         where TRequest : IBaseRequest<Response<TResponse>>

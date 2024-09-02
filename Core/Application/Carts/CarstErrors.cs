@@ -1,7 +1,7 @@
-﻿using Architecture.Application.Common.Models;
+﻿using CleanArchitecture.Application.Common.Models;
 using System.Net;
 
-namespace Architecture.Application.Carts
+namespace CleanArchitecture.Application.Carts
 {
     public static class CartsErrors
     {

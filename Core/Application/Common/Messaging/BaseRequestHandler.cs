@@ -1,9 +1,9 @@
-﻿using Architecture.Application.Common.Abstracts.Account;
-using Architecture.Application.Common.Abstracts.Persistence;
-using AutoMapper;
+﻿using AutoMapper;
+using CleanArchitecture.Application.Common.Abstracts.Account;
+using CleanArchitecture.Application.Common.Abstracts.Persistence;
 using Common.DependencyInjection.Extensions;
 
-namespace Architecture.Application.Common.Messaging
+namespace CleanArchitecture.Application.Common.Messaging
 {
     #region Class BaseRequestHandler
     public abstract class BaseRequestHandler<TRequest, TResponse> : IBaseRequestHandler<TRequest, TResponse>

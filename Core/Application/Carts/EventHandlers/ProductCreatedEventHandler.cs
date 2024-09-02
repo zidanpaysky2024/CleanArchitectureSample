@@ -1,8 +1,8 @@
-﻿using Architecture.Application.Common.Abstracts.DomainEvent;
-using Architecture.Domain.Product.Events;
+﻿using CleanArchitecture.Application.Common.Abstracts.DomainEvent;
+using CleanArchitecture.Domain.Product.Events;
 using Microsoft.Extensions.Logging;
 
-namespace Architecture.Application.Carts.EventHandlers
+namespace CleanArchitecture.Application.Carts.EventHandlers
 {
     public sealed class ProductCreatedEventHandler : BaseDomainEventHandler<ProductCreatedEvent>
     {

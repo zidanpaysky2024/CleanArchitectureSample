@@ -1,10 +1,10 @@
-﻿using Architecture.Application.Common.Abstracts.Account;
-using Architecture.Domain.Common;
+﻿using CleanArchitecture.Application.Common.Abstracts.Account;
+using CleanArchitecture.Domain.Common;
 using Common.DependencyInjection.Extensions;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Architecture.Application.Common.Abstracts.DomainEvent
+namespace CleanArchitecture.Application.Common.Abstracts.DomainEvent
 {
     public abstract class BaseDomainEventHandler<TDomainEvent> : INotificationHandler<TDomainEvent>
         where TDomainEvent : BaseDomainEvent

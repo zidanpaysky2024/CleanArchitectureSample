@@ -1,8 +1,8 @@
-﻿using Architecture.Infrastructure.Identity;
+﻿using CleanArchitecture.Infrastructure.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
 
-namespace Architecture.Infrastructure.Identity
+namespace CleanArchitecture.Infrastructure.Identity
 {
     public class AuthorizationPolicyProvider : DefaultAuthorizationPolicyProvider
     {

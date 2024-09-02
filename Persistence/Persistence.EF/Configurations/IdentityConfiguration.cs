@@ -1,8 +1,8 @@
-﻿using Architecture.Infrastructure.Identity;
+﻿using CleanArchitecture.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace Architecture.Persistence.EF.Configurations
+namespace CleanArchitecture.Persistence.EF.Configurations
 {
     internal static class IdentityConfiguration
     {

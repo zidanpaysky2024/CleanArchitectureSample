@@ -1,14 +1,14 @@
-﻿using Architecture.Application.Common.Abstracts.Account;
-using Architecture.Infrastructure.Identity;
-using Architecture.Infrastructure.Identity.JwtSetupOtions;
-using Architecture.Persistence.EF;
+﻿using CleanArchitecture.Application.Common.Abstracts.Account;
+using CleanArchitecture.Infrastructure.Identity;
+using CleanArchitecture.Infrastructure.Identity.JwtSetupOtions;
+using CleanArchitecture.Persistence.EF;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Architecture.WebAPI.Configuration
+namespace CleanArchitecture.WebAPI.Configuration
 {
     public class AuthenticationAndAuthorizatonServicesInstaller : IServiceInstaller
     {

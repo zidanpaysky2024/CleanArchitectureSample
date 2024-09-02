@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace Architecture.WebAPI.Common
+namespace CleanArchitecture.WebAPI.Common
 {
     public class GlobalExceptionHandler : IExceptionHandler
     {

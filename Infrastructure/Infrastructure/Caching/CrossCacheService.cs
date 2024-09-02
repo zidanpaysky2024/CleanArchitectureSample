@@ -1,10 +1,10 @@
-﻿using Architecture.Application.Common.Abstracts.Caching;
-using Architecture.Application.Common.Caching;
+﻿using CleanArchitecture.Application.Common.Abstracts.Caching;
+using CleanArchitecture.Application.Common.Caching;
 using Common.Operation;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace Architecture.Infrastructure.Caching;
+namespace CleanArchitecture.Infrastructure.Caching;
 public class CrossCacheService : ICrossCacheService
 {
     #region Dependencies

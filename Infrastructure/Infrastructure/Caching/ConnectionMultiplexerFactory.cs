@@ -1,9 +1,9 @@
-﻿using Architecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
+﻿using CleanArchitecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
 using Microsoft.Extensions.Configuration;
 using StackExchange.Redis;
 using System.Text;
 
-namespace Architecture.Infrastructure.Caching;
+namespace CleanArchitecture.Infrastructure.Caching;
 
 public static class ConnectionMultiplexerFactory
 {

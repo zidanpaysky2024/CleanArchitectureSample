@@ -1,6 +1,6 @@
-﻿using Architecture.Domain.Product.Entites;
+﻿using CleanArchitecture.Domain.Product.Entites;
 
-namespace Architecture.Application.Products.Commands.AddProduct
+namespace CleanArchitecture.Application.Products.Commands.AddProduct
 {
     public class ProductItemDto
     {

@@ -1,7 +1,7 @@
-﻿using Architecture.Domain.Common;
-using Architecture.Domain.Product.Entites;
+﻿using CleanArchitecture.Domain.Common;
+using CleanArchitecture.Domain.Product.Entites;
 
-namespace Architecture.Domain.Product.Events
+namespace CleanArchitecture.Domain.Product.Events
 {
     public record ProductPriceChangedEvent(ProductItem ProductDetails) : BaseDomainEvent
     {

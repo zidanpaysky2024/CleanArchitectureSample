@@ -1,7 +1,7 @@
-﻿using Architecture.Application.Common.Messaging;
+﻿using CleanArchitecture.Application.Common.Messaging;
 using System.Diagnostics;
 
-namespace Architecture.Application.Common.Behaviours
+namespace CleanArchitecture.Application.Common.Behaviours
 {
     public class LoggingPostProcessor<TRequest> : IRequestPostProcessor<TRequest>
         where TRequest : notnull, IBaseCommand

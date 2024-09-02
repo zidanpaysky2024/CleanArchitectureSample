@@ -1,7 +1,7 @@
-﻿using Architecture.Application.Common.Messaging;
+﻿using CleanArchitecture.Application.Common.Messaging;
 using System.Net;
 
-namespace Architecture.Application.Common.Models
+namespace CleanArchitecture.Application.Common.Models
 {
     public record Error(int Code, string Message, Dictionary<string, string>? SubErrors = default)
     {
