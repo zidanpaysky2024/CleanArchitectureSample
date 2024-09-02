@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Application.Products.Commands.AddProduct;
+﻿using Architecture.Application.Products.Commands.AddProduct;
 using FluentValidation;
 
-namespace CleanArchitecture.Application.Products.Commands.UpdateProduct
+namespace Architecture.Application.Products.Commands.UpdateProduct
 {
     public class UpdateProductCommandValidator : AbstractValidator<UpdateProductCommand>
     {

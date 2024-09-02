@@ -1,12 +1,12 @@
-﻿using CleanArchitecture.Application.Carts.Commands.AddItemToCart;
-using CleanArchitecture.Application.Carts.Commands.RemoveCartItem;
-using CleanArchitecture.Application.Carts.Commands.UpdateCartItem;
-using CleanArchitecture.Application.Carts.Queries.GetCart;
-using CleanArchitecture.WebAPI.Common;
+﻿using Architecture.Application.Carts.Commands.AddItemToCart;
+using Architecture.Application.Carts.Commands.RemoveCartItem;
+using Architecture.Application.Carts.Commands.UpdateCartItem;
+using Architecture.Application.Carts.Queries.GetCart;
+using Architecture.WebAPI.Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchitecture.WebAPI.Controllers
+namespace Architecture.WebAPI.Controllers
 {
     [Authorize]
     public class CartController : BaseApiController

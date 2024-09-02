@@ -1,11 +1,11 @@
-﻿using CleanArchitecture.Application.Categories.Commands.AddCategory;
-using CleanArchitecture.Application.Categories.Queries.GetAllCategories;
-using CleanArchitecture.Domain.Constants;
-using CleanArchitecture.WebAPI.Common;
+﻿using Architecture.Application.Categories.Commands.AddCategory;
+using Architecture.Application.Categories.Queries.GetAllCategories;
+using Architecture.Domain.Constants;
+using Architecture.WebAPI.Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchitecture.WebAPI.Controllers
+namespace Architecture.WebAPI.Controllers
 {
     public class CategoryController : BaseApiController
     {

@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Domain.Common;
+﻿using Architecture.Domain.Common;
 
-namespace CleanArchitecture.Domain.Product.Events
+namespace Architecture.Domain.Product.Events
 {
     public record ProductDeletedEvent(Entites.Product Product) : BaseDomainEvent
     {

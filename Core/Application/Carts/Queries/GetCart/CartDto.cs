@@ -1,8 +1,8 @@
-﻿using AutoMapper;
-using CleanArchitecture.Domain.Cart.Entities;
-using CleanArchitecture.Domain.Product.Entites;
+﻿using Architecture.Domain.Cart.Entities;
+using Architecture.Domain.Product.Entites;
+using AutoMapper;
 
-namespace CleanArchitecture.Application.Carts.Queries.GetCart
+namespace Architecture.Application.Carts.Queries.GetCart
 {
     public record CartDto
     {

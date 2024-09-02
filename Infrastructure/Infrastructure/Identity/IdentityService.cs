@@ -1,13 +1,12 @@
-﻿using CleanArchitecture.Application.Common.Abstracts;
-using CleanArchitecture.Application.Common.Abstracts.Account;
-using CleanArchitecture.Application.Common.Errors;
-using CleanArchitecture.Application.Common.Messaging;
-using CleanArchitecture.Application.Users.Commands.Dtos;
+﻿using Architecture.Application.Common.Abstracts.Account;
+using Architecture.Application.Common.Errors;
+using Architecture.Application.Common.Messaging;
+using Architecture.Application.Users.Commands.Dtos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Infrastructure.Identity
+namespace Architecture.Infrastructure.Identity
 {
     public class IdentityService : IIdentityService
     {
@@ -32,7 +31,7 @@ namespace CleanArchitecture.Infrastructure.Identity
             _jwtProvider = jwtProvider;
             _userClaimsPrincipalFactory = userClaimsPrincipalFactory;
             _authorizationService = authorizationService;
-            this.CurrentUser = currentUser;
+            CurrentUser = currentUser;
             _roleManager = roleManager;
         }
         #endregion

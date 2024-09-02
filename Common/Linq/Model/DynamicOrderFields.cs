@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace CleanArchitecture.Common.Linq.Model
+namespace Common.Linq.Model
 {
     public record DynamicOrderFields
     {

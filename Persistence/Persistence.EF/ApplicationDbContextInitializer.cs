@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Domain.Constants;
-using CleanArchitecture.Domain.Product.Entites;
-using CleanArchitecture.Infrastructure.Identity;
+﻿using Architecture.Application.Common.Abstracts.Persistence;
+using Architecture.Domain.Constants;
+using Architecture.Domain.Product.Entites;
+using Architecture.Infrastructure.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Security.Claims;
 
-namespace CleanArchitecture.Persistence.EF
+namespace Architecture.Persistence.EF
 {
     public static class InitializerExtensions
     {

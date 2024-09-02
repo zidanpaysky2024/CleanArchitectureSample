@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Caching;
-using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Infrastructure.Caching;
-using CleanArchitecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
-using CleanArchitecture.Persistence.EF;
-using CleanArchitecture.Persistence.EF.Interceptors;
+﻿using Architecture.Application.Common.Abstracts.Caching;
+using Architecture.Application.Common.Abstracts.Persistence;
+using Architecture.Infrastructure.Caching;
+using Architecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
+using Architecture.Persistence.EF;
+using Architecture.Persistence.EF.Interceptors;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Caching.StackExchangeRedis;
@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace CleanArchitecture.WebAPI.Configuration
+namespace Architecture.WebAPI.Configuration
 {
     public class InfrastructureServicesInstaller : IServiceInstaller
     {

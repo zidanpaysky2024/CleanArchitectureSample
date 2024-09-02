@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
 
-namespace CleanArchitecture.Application.Common.Caching
+namespace Architecture.Application.Common.Caching
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
     public class CacheAttribute : Attribute

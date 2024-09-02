@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Common.Operation
+﻿namespace Common.Operation
 {
     public static class SemaphoreSlimExtension
     {

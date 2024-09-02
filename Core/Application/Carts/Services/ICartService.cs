@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Business;
-using CleanArchitecture.Domain.Cart.Entities;
+﻿using Architecture.Application.Common.Abstracts.Business;
+using Architecture.Domain.Cart.Entities;
 
-namespace CleanArchitecture.Application.Carts.Services
+namespace Architecture.Application.Carts.Services
 {
     public interface ICartService : IService
     {

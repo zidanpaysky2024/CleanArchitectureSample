@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.DomainEvent;
-using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Domain.Product.Events;
+﻿using Architecture.Application.Common.Abstracts.DomainEvent;
+using Architecture.Application.Common.Abstracts.Persistence;
+using Architecture.Domain.Product.Events;
 using Microsoft.Extensions.Logging;
 
-namespace CleanArchitecture.Application.Carts.EventHandlers
+namespace Architecture.Application.Carts.EventHandlers
 {
     public sealed class ProductAmountChangedEventHandler : BaseDomainEventHandler<ProductItemAmountChangedEvent>
     {

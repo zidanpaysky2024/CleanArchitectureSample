@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Common.SystemTypes.Extensions
+﻿namespace Common.SystemTypes.Extensions
 {
     public static class EnumExtension
     {

@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.ClinetInfo;
+﻿using Architecture.Application.Common.Abstracts.ClinetInfo;
 
-namespace CleanArchitecture.WebAPI.Services
+namespace Architecture.WebAPI.Services
 {
     public class CurrentRequestInfoService : ICurrentRequestInfoService
     {
@@ -12,13 +12,13 @@ namespace CleanArchitecture.WebAPI.Services
         #region Constructor
         public CurrentRequestInfoService(IHttpContextAccessor httpContextAccessor)
         {
-            this.HttpAccessor = httpContextAccessor;
-            this.CurrentRequest = HttpAccessor.HttpContext?.Request;
-            this.Host = CurrentRequest?.Host.Host;
-            this.Method = CurrentRequest?.Method;
-            this.Path = CurrentRequest?.Path;
-            this.PathBase = CurrentRequest?.PathBase.ToString();
-            this.Protocol = CurrentRequest?.Protocol;
+            HttpAccessor = httpContextAccessor;
+            CurrentRequest = HttpAccessor.HttpContext?.Request;
+            Host = CurrentRequest?.Host.Host;
+            Method = CurrentRequest?.Method;
+            Path = CurrentRequest?.Path;
+            PathBase = CurrentRequest?.PathBase.ToString();
+            Protocol = CurrentRequest?.Protocol;
         }
         #endregion
 

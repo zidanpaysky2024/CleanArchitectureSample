@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
 
-namespace CleanArchitecture.Application.Common.Abstracts.Caching
+namespace Architecture.Application.Common.Abstracts.Caching
 {
     public interface IInMemoryCacheService
     {

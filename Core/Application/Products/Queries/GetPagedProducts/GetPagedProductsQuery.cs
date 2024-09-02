@@ -1,12 +1,12 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Application.Common.Messaging;
-using CleanArchitecture.Application.Common.Models;
-using CleanArchitecture.Application.Common.Security;
-using CleanArchitecture.Common.Linq.Model;
-using CleanArchitecture.Domain.Constants;
+﻿using Architecture.Application.Common.Abstracts.Persistence;
+using Architecture.Application.Common.Messaging;
+using Architecture.Application.Common.Models;
+using Architecture.Domain.Constants;
+using Architecture.Application.Common.Security;
+using Common.Linq.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Application.Products.Queries.GetPagedProducts
+namespace Architecture.Application.Products.Queries.GetPagedProducts
 {
     #region Request
     [Authorize(Roles = Roles.Administrator)]

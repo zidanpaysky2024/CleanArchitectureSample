@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Application.Common.Messaging;
+﻿using Architecture.Application.Common.Messaging;
 using Common.DependencyInjection.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchitecture.WebAPI.Common
+namespace Architecture.WebAPI.Common
 {
     [Route("api/[controller]")]
     public class BaseApiController : ControllerBase

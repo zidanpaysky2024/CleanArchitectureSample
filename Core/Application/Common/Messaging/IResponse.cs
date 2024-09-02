@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Application.Common.Models;
+﻿using Architecture.Application.Common.Models;
 
-namespace CleanArchitecture.Application.Common.Messaging
+namespace Architecture.Application.Common.Messaging
 {
     public interface IResponse<T>
     {

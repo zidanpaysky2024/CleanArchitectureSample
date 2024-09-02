@@ -1,18 +1,18 @@
 ﻿
 
-using CleanArchitecture.Application.Carts.IEntitySets;
-using CleanArchitecture.Application.Categories.IEntitySets;
-using CleanArchitecture.Application.Common.Abstracts.Account;
-using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Application.Products.IEntitySets;
-using CleanArchitecture.Infrastructure.Identity;
-using CleanArchitecture.Persistence.EF.Configurations;
+using Architecture.Application.Carts.IEntitySets;
+using Architecture.Application.Categories.IEntitySets;
+using Architecture.Application.Common.Abstracts.Account;
+using Architecture.Application.Common.Abstracts.Persistence;
+using Architecture.Application.Products.IEntitySets;
+using Architecture.Infrastructure.Identity;
+using Architecture.Persistence.EF.Configurations;
 using Common.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-namespace CleanArchitecture.Persistence.EF
+namespace Architecture.Persistence.EF
 {
     public sealed class ApplicationDbContext : IdentityUserContext<ApplicationUser>, IApplicationDbContext
     {

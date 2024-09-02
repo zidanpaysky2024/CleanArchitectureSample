@@ -1,11 +1,11 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Application.Common.Messaging;
-using CleanArchitecture.Application.Common.Models;
-using CleanArchitecture.Application.Common.Security;
-using CleanArchitecture.Domain.Constants;
-using CleanArchitecture.Domain.Product.Events;
+﻿using Architecture.Application.Common.Abstracts.Persistence;
+using Architecture.Application.Common.Messaging;
+using Architecture.Application.Common.Models;
+using Architecture.Domain.Constants;
+using Architecture.Application.Common.Security;
+using Architecture.Domain.Product.Events;
 
-namespace CleanArchitecture.Application.Products.Commands.DeleteProduct
+namespace Architecture.Application.Products.Commands.DeleteProduct
 {
     #region Request
     [Authorize(Policy = Permissions.Product.Delete)]

@@ -1,9 +1,9 @@
-﻿using AutoMapper;
-using CleanArchitecture.Application.Common.Abstracts.Account;
-using CleanArchitecture.Application.Common.Abstracts.Persistence;
+﻿using Architecture.Application.Common.Abstracts.Account;
+using Architecture.Application.Common.Abstracts.Persistence;
+using AutoMapper;
 using Common.DependencyInjection.Extensions;
 
-namespace CleanArchitecture.Application.Common.Messaging
+namespace Architecture.Application.Common.Messaging
 {
     #region Class BaseRequestHandler
     public abstract class BaseRequestHandler<TRequest, TResponse> : IBaseRequestHandler<TRequest, TResponse>
@@ -22,7 +22,7 @@ namespace CleanArchitecture.Application.Common.Messaging
         #region Constructor
         protected BaseRequestHandler(IServiceProvider serviceProvider)
         {
-            this.ServiceProvider = serviceProvider;
+            ServiceProvider = serviceProvider;
         }
         #endregion
 

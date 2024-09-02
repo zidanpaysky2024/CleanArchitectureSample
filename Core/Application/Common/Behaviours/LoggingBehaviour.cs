@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.Application.Common.Messaging;
+﻿using Architecture.Application.Common.Messaging;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace CleanArchitecture.Application.Common.Behaviours
+namespace Architecture.Application.Common.Behaviours
 {
     public class LoggingBehaviour<TRequest, TResponse> : IRequestResponsePipeline<TRequest, TResponse>
          where TRequest : IBaseRequest<Response<TResponse>>

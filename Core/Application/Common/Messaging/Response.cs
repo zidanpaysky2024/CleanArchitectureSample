@@ -1,11 +1,11 @@
-﻿using CleanArchitecture.Application.Common.Models;
+﻿using Architecture.Application.Common.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Diagnostics;
 using System.Net;
 using System.Runtime.CompilerServices;
 
-namespace CleanArchitecture.Application.Common.Messaging
+namespace Architecture.Application.Common.Messaging
 {
     public static class Response
     {

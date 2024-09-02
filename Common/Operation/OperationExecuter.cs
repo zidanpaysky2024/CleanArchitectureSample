@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Common.Operation
+﻿namespace Common.Operation
 {
     public static class OperationExecuter
     {
@@ -12,7 +12,7 @@
                 try
                 {
                     await func();
-                    return (null);
+                    return null;
                 }
                 catch (Exception ex)
                 {
@@ -22,7 +22,7 @@
                 }
             }
 
-            return (exception);
+            return exception;
         }
         public static async Task<TResult?> RetryAsync<TResult>(Func<Task<TResult>> func, int numberOfRetries = 3, int waitTime = 500)
         {

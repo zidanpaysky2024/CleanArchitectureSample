@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Application.Common.Models;
+﻿using Architecture.Application.Common.Models;
 using System.Net;
 
-namespace CleanArchitecture.Application.Common.Errors
+namespace Architecture.Application.Common.Errors
 {
     public static class SecurityAccessErrors
     {

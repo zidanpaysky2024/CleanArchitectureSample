@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Application.Common.Messaging;
-using CleanArchitecture.Application.Common.Models;
+﻿using Architecture.Application.Common.Messaging;
+using Architecture.Application.Common.Models;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
-namespace CleanArchitecture.Application.Common.Behaviours
+namespace Architecture.Application.Common.Behaviours
 {
     public class UnhandledExceptionBehaviour<TRequest, TResponse> : IRequestResponsePipeline<TRequest, TResponse>
           where TRequest : IBaseRequest<Response<TResponse>>

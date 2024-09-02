@@ -1,14 +1,14 @@
-﻿using CleanArchitecture.Application.Products.Commands.AddProduct;
-using CleanArchitecture.Application.Products.Commands.ChangeProductItemAmount;
-using CleanArchitecture.Application.Products.Commands.DeleteProduct;
-using CleanArchitecture.Application.Products.Commands.UpdateProduct;
-using CleanArchitecture.Application.Products.Queries.GetPagedProducts;
-using CleanArchitecture.Domain.Constants;
-using CleanArchitecture.WebAPI.Common;
+﻿using Architecture.Application.Products.Commands.AddProduct;
+using Architecture.Application.Products.Commands.ChangeProductItemAmount;
+using Architecture.Application.Products.Commands.DeleteProduct;
+using Architecture.Application.Products.Commands.UpdateProduct;
+using Architecture.Application.Products.Queries.GetPagedProducts;
+using Architecture.Domain.Constants;
+using Architecture.WebAPI.Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchitecture.WebAPI.Controllers
+namespace Architecture.WebAPI.Controllers
 {
     public class ProductController : BaseApiController
     {

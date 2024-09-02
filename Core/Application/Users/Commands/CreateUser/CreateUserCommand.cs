@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Application.Common.Abstracts;
-using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Application.Common.Messaging;
-using CleanArchitecture.Application.Users.Commands.Dtos;
+﻿using Architecture.Application.Common.Abstracts.Account;
+using Architecture.Application.Common.Abstracts.Persistence;
+using Architecture.Application.Common.Messaging;
+using Architecture.Application.Users.Commands.Dtos;
 
-namespace CleanArchitecture.Application.Users.Commands.CreateUser
+namespace Architecture.Application.Users.Commands.CreateUser
 {
     #region Request
     public record CreateUserCommand(string FirstName,

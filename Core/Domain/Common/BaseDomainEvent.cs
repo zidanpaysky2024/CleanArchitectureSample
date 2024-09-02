@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace CleanArchitecture.Domain.Common
+namespace Architecture.Domain.Common
 {
     public abstract record BaseDomainEvent : INotification
     {

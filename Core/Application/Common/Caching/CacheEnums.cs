@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Application.Common.Caching;
+﻿namespace Architecture.Application.Common.Caching;
 public enum CacheKeysPrefixes
 {
     Cart = 0,

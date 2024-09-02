@@ -1,15 +1,16 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Application.Common.Exceptions;
-using CleanArchitecture.Common.Linq.Model;
-using CleanArchitecture.Domain.Common;
+﻿using Architecture.Application.Common.Abstracts.Persistence;
+using Architecture.Domain.Common;
+using Architecture.Persistence.EF;
+using Architecture.Application.Common.Exceptions;
 using Common.Linq;
+using Common.Linq.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using System.ComponentModel;
 using System.Linq.Expressions;
 using static Common.Linq.IQueryableExtension;
 
-namespace CleanArchitecture.Persistence.EF.EntitySets
+namespace Architecture.Persistence.EF.EntitySets
 {
     public class EntitySet<T> : IEntitySet<T> where T : Entity, IAggregateRoot
     {

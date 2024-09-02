@@ -1,11 +1,12 @@
-﻿using CleanArchitecture.Application.Carts.Services;
-using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Application.Common.Caching;
-using CleanArchitecture.Application.Common.Messaging;
-using CleanArchitecture.Application.Common.Security;
-using CleanArchitecture.Domain.Constants;
+﻿using Architecture.Application.Carts;
+using Architecture.Application.Carts.Services;
+using Architecture.Application.Common.Abstracts.Persistence;
+using Architecture.Application.Common.Caching;
+using Architecture.Application.Common.Messaging;
+using Architecture.Domain.Constants;
+using Architecture.Application.Common.Security;
 
-namespace CleanArchitecture.Application.Carts.Queries.GetCart
+namespace Architecture.Application.Carts.Queries.GetCart
 {
     #region Request
     [Authorize(Policy = Permissions.Cart.Read)]

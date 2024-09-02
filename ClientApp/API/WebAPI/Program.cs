@@ -1,9 +1,9 @@
-using CleanArchitecture.Application.Common.Abstracts.Account;
-using CleanArchitecture.Application.Common.Abstracts.ClinetInfo;
-using CleanArchitecture.Persistence.EF;
-using CleanArchitecture.WebAPI.Common;
-using CleanArchitecture.WebAPI.Configuration;
-using CleanArchitecture.WebAPI.Services;
+using Architecture.Application.Common.Abstracts.Account;
+using Architecture.Application.Common.Abstracts.ClinetInfo;
+using Architecture.Persistence.EF;
+using Architecture.WebAPI.Common;
+using Architecture.WebAPI.Configuration;
+using Architecture.WebAPI.Services;
 using Microsoft.OpenApi.Models;
 using System.Text.Json.Serialization;
 

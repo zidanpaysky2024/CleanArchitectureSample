@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.Common
+﻿namespace Architecture.Domain.Common
 {
     public interface ISoftDeletable
     {

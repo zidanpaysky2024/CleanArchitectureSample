@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Application.Common.Errors;
-using CleanArchitecture.Application.Common.Messaging;
+﻿using Architecture.Application.Common.Errors;
+using Architecture.Application.Common.Messaging;
 using FluentValidation;
 using FluentValidation.Results;
 
-namespace CleanArchitecture.Application.Common.Behaviours
+namespace Architecture.Application.Common.Behaviours
 {
     public class ValidationBehaviour<TRequest, TResponse> : IRequestResponsePipeline<TRequest, TResponse>
           where TRequest : IBaseRequest<Response<TResponse>>

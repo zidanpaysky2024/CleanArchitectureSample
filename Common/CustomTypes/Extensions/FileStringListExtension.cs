@@ -1,7 +1,7 @@
 ﻿using Common.CustomTypes;
 using Microsoft.AspNetCore.Http;
 
-namespace CleanArchitecture.Common.CustomTypes.Extensions
+namespace Common.CustomTypes.Extensions
 {
 
     public static class FileStringListExtension

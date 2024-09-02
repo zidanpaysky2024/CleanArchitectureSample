@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Application.Common.Messaging
+﻿namespace Architecture.Application.Common.Messaging
 {
     #region Request Pipline
     public delegate Task<TResponse> MyRequestHandlerDelegate<TResponse>();

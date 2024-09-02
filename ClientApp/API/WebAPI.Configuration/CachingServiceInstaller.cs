@@ -1,12 +1,12 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Caching;
-using CleanArchitecture.Infrastructure.Caching;
-using CleanArchitecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
+﻿using Architecture.Application.Common.Abstracts.Caching;
+using Architecture.Infrastructure.Caching;
+using Architecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using StackExchange.Redis;
 
-namespace CleanArchitecture.WebAPI.Configuration
+namespace Architecture.WebAPI.Configuration
 {
     public class CachingServiceInstaller : IServiceInstaller
     {

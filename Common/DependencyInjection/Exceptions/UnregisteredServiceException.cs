@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Application.Common.Exceptions
+﻿namespace Common.DependencyInjection.Exceptions
 {
     public class UnregisteredServiceException : Exception
     {

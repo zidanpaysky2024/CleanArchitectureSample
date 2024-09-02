@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.Application.Common.Caching;
+﻿using Architecture.Application.Common.Caching;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 
-namespace CleanArchitecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
+namespace Architecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
 
 public class CrossCacheEntryOptionSetup : IConfigureOptions<CrossCacheEntryOption>
 {

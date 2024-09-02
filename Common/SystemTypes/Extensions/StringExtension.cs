@@ -1,7 +1,7 @@
 ﻿using System.IO.Compression;
 using System.Text;
 
-namespace CleanArchitecture.Common.SystemTypes.Extensions
+namespace Common.SystemTypes.Extensions
 {
     public static class StringExtension
     {

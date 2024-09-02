@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Application.Common.Exceptions
+﻿namespace Architecture.Application.Common.Exceptions
 {
     public class NotFoundException : Exception
     {

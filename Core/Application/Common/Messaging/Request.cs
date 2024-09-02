@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace CleanArchitecture.Application.Common.Messaging
+namespace Architecture.Application.Common.Messaging
 {
     #region Class BaseRequest 
     public record BaseRequest<TResponse> : IBaseRequest<TResponse>
@@ -11,7 +11,7 @@ namespace CleanArchitecture.Application.Common.Messaging
         [JsonIgnore]
         public string? UserId { get; set; }
         [JsonIgnore]
-        public string RequestName => this.GetType().Name;
+        public string RequestName => GetType().Name;
         [JsonIgnore]
         public RequestType RequestType { get; init; }
 

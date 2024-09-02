@@ -1,9 +1,7 @@
-﻿using CleanArchitecture.Application.Categories.IEntitySets;
-using CleanArchitecture.Domain.Product.Entites;
-using CleanArchitecture.Persistence.EF;
-using CleanArchitecture.Persistence.EF.EntitySets;
+﻿using Architecture.Application.Categories.IEntitySets;
+using Architecture.Domain.Product.Entites;
 
-namespace Persistence.EF.EntitySets.ProductCatalogue
+namespace Architecture.Persistence.EF.EntitySets
 {
     public class CategorySet : EntitySet<Category>, ICategorySet
     {

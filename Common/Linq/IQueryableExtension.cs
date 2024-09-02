@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Common.Linq.Model;
+﻿using Common.Linq.Model;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel;
 using System.Linq.Expressions;

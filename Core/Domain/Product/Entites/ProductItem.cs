@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Domain.Common;
-using CleanArchitecture.Domain.Product.Events;
+﻿using Architecture.Domain.Common;
+using Architecture.Domain.Product.Events;
 
-namespace CleanArchitecture.Domain.Product.Entites
+namespace Architecture.Domain.Product.Entites
 {
     public class ProductItem : AuditableEntity
     {

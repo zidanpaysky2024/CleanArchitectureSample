@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace CleanArchitecture.Application.Categories.Commands.AddCategory
+namespace Architecture.Application.Categories.Commands.AddCategory
 {
     public class AddCategoryCommandValidatior : AbstractValidator<AddCategoryCommand>
     {

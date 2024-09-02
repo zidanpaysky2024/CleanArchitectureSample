@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
 using StackExchange.Redis;
 
-namespace CleanArchitecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
+namespace Architecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
 public class RedisConfigurationOptionsSetup : IConfigureNamedOptions<ConfigurationOptions>
 {
     #region Properties

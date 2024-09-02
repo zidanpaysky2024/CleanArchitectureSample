@@ -1,11 +1,11 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Account;
-using CleanArchitecture.Domain.Common;
+﻿using Architecture.Application.Common.Abstracts.Account;
+using Architecture.Domain.Common;
 using Common.SystemTypes.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace CleanArchitecture.Persistence.EF.Interceptors
+namespace Architecture.Persistence.EF.Interceptors
 {
     public class AuditableEntityInterceptor : SaveChangesInterceptor
     {

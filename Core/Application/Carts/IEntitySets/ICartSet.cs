@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Domain.Cart.Entities;
-using CleanArchitecture.Domain.Product.Entites;
+﻿using Architecture.Application.Common.Abstracts.Persistence;
+using Architecture.Domain.Cart.Entities;
+using Architecture.Domain.Product.Entites;
 
-namespace CleanArchitecture.Application.Carts.IEntitySets
+namespace Architecture.Application.Carts.IEntitySets
 {
     public interface ICartSet : IEntitySet<Cart>
     {

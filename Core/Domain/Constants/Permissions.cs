@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Common.SystemTypes.Extensions;
+﻿using Common.SystemTypes.Extensions;
 
-namespace CleanArchitecture.Domain.Constants
+namespace Architecture.Domain.Constants
 {
     public enum Modules
     {

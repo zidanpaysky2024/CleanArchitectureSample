@@ -1,10 +1,10 @@
-﻿using CleanArchitecture.Common.Linq.Model;
-using CleanArchitecture.Domain.Common;
+﻿using Architecture.Domain.Common;
+using Common.Linq.Model;
 using Microsoft.EntityFrameworkCore.Query;
 using System.ComponentModel;
 using System.Linq.Expressions;
 
-namespace CleanArchitecture.Application.Common.Abstracts.Persistence
+namespace Architecture.Application.Common.Abstracts.Persistence
 {
     public interface IEntitySet<T> where T : Entity, IAggregateRoot
     {

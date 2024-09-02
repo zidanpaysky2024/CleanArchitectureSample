@@ -1,10 +1,10 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Business;
-using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Domain.Cart.Entities;
-using CleanArchitecture.Domain.Product.Entites;
+﻿using Architecture.Application.Common.Abstracts.Business;
+using Architecture.Application.Common.Abstracts.Persistence;
+using Architecture.Domain.Cart.Entities;
+using Architecture.Domain.Product.Entites;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Application.Carts.Services
+namespace Architecture.Application.Carts.Services
 {
     public class CartService : BaseService, ICartService
     {

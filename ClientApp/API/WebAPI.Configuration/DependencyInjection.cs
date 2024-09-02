@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace CleanArchitecture.WebAPI.Configuration
+namespace Architecture.WebAPI.Configuration
 {
     public static class DependencyInjection
     {

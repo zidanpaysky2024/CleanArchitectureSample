@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Domain.Common;
+﻿using Architecture.Domain.Common;
 
-namespace CleanArchitecture.Domain.Product.Entites
+namespace Architecture.Domain.Product.Entites
 {
     public class Category : AuditableEntity, IAggregateRoot
     {

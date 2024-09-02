@@ -1,5 +1,5 @@
-﻿using CleanArchitecture.Application.Users.Commands.Dtos;
-using CleanArchitecture.Domain.Constants;
+﻿using Architecture.Application.Users.Commands.Dtos;
+using Architecture.Domain.Constants;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -7,7 +7,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace CleanArchitecture.Infrastructure.Identity
+namespace Architecture.Infrastructure.Identity
 {
     public class JwtProvider
     {

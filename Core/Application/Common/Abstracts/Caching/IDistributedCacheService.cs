@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
 
-namespace CleanArchitecture.Application.Common.Abstracts.Caching;
+namespace Architecture.Application.Common.Abstracts.Caching;
 public interface IDistributedCacheService
 {
     Task<T?> GetAsync<T>(string key, CancellationToken cancellationToken = default) where T : class;
