@@ -62,6 +62,7 @@ public class DistributedCacheService : IDistributedCacheService
         }
         T? value = JsonConvert.DeserializeObject<T>(cachedValue);
         _logger.LogInformation("Caching: Retrieved the cached value of key: {Key} from  Redis ", key);
+      
         return value;
     }
 

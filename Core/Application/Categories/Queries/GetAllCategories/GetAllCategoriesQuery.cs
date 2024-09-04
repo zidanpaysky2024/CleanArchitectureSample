@@ -4,13 +4,16 @@ using CleanArchitecture.Domain.Constants;
 using CleanArchitecture.Application.Common.Abstracts.Persistence;
 using CleanArchitecture.Application.Common.Messaging;
 using CleanArchitecture.Application.Common.Models;
+using CleanArchitecture.Application.Common.Caching;
 
 namespace CleanArchitecture.Application.Categories.Queries.GetAllCategories
 {
     #region Request
 
     [Authorize(Policy = Permissions.Product.ReadCategories)]
-    public record GetAllCategoriesQuery : BaseQuery<IReadOnlyCollection<Category>>
+    [Cache(CacheStore = CacheStore.All, SlidingExpirationMinutes = "1", /*AbsoluteExpirationMinutes = "60", LimitSize = "10",*/ ToInvalidate = false, KeyPrefix = nameof(CacheKeysPrefixes.Category))]
+
+    public record GetAllCategoriesQuery : BaseQuery<IReadOnlyCollection<Category>>, ICacheable
     {
 
     }

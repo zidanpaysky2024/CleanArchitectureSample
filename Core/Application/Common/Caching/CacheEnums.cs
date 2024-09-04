@@ -3,6 +3,7 @@ public enum CacheKeysPrefixes
 {
     Cart = 0,
     Product = 1,
+    Category = 2,
 }
 public enum CacheStore
 {

@@ -7,20 +7,19 @@ namespace CleanArchitecture.Infrastructure.Caching;
 
 public static class ConnectionMultiplexerFactory
 {
-    private static ConnectionMultiplexer? s_connection = null;
+    private static Lazy<ConnectionMultiplexer>? lazyConnection;
+
     public static ConnectionMultiplexer GetConnection(IConfiguration configuration)
     {
-        if (s_connection is null)
-        {
-            var lazyConnection = new Lazy<ConnectionMultiplexer>(() =>
-            {
-                return ConnectionMultiplexer.ConnectAsync(GetRedisConnectionString(configuration), option => option.AbortOnConnectFail = false).Result;
-            });
-            s_connection = lazyConnection.Value;
-        }
+        lazyConnection ??= new Lazy<ConnectionMultiplexer>(() =>
+           {
+               return ConnectionMultiplexer.ConnectAsync(GetRedisConnectionString(configuration),
+                                                         option => option.AbortOnConnectFail = false).Result;
+           });
 
-        return s_connection;
+        return lazyConnection.Value;
     }
+
     private static string GetRedisConnectionString(IConfiguration configuration)
     {
         RedisOptions redisOptions = new();
