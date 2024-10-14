@@ -16,42 +16,22 @@ namespace CleanArchitecture.Infrastructure.Identity.JwtSetupOtions
 
         public void Configure(string? name, JwtBearerOptions options)
         {
-            options.TokenValidationParameters = new()
-            {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidateLifetime = true,
-                ValidateIssuerSigningKey = true,
-                ValidIssuer = JwtOptions.Issuer,
-                ValidAudience = JwtOptions.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(
-                   Encoding.UTF8.GetBytes(JwtOptions.Key!))
-            };
-            options.Events = new JwtBearerEvents
-            {
-                OnAuthenticationFailed = context =>
-                {
-                    if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
-                    {
-                        context.Response.Headers.Append("Token-Expired", "true");
-                    }
-                    return Task.CompletedTask;
-                }
-            };
+            ConfigureJwtBearer(options);
         }
 
         public void Configure(JwtBearerOptions options)
         {
+            ConfigureJwtBearer(options);
+        }
+        private void ConfigureJwtBearer(JwtBearerOptions options)
+        {
+            options.RequireHttpsMetadata = false;
             options.TokenValidationParameters = new()
             {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidateLifetime = true,
-                ValidateIssuerSigningKey = true,
                 ValidIssuer = JwtOptions.Issuer,
                 ValidAudience = JwtOptions.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(
-                   Encoding.UTF8.GetBytes(JwtOptions.Key!))
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtOptions.Key!)),
+                ClockSkew = TimeSpan.Zero
             };
             options.Events = new JwtBearerEvents
             {

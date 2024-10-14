@@ -39,7 +39,7 @@ namespace CleanArchitecture.Application.Products.Commands.DeleteProduct
         {
             int affectedRows = 0;
 
-            var product = await DbContext.Products.GetByIdAsync(request.Id);
+            var product = await DbContext.Products.GetByIdAsync(request.Id, cancellationToken);
 
             if (product is null)
             {

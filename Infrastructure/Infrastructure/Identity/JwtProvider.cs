@@ -3,7 +3,7 @@ using CleanArchitecture.Domain.Constants;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.JsonWebTokens;
 using System.Security.Claims;
 using System.Text;
 
@@ -11,10 +11,6 @@ namespace CleanArchitecture.Infrastructure.Identity
 {
     public class JwtProvider
     {
-        #region Fields
-        private const int EXPIRATION_MINUTES = 600;
-        #endregion
-
         #region Dependencies
         private JwtOptions Options { get; }
         private UserManager<ApplicationUser> UserManager { get; }
@@ -35,47 +31,39 @@ namespace CleanArchitecture.Infrastructure.Identity
         #region Methods
         public async Task<TokenResponse> GenerateAsync(ApplicationUser user)
         {
-            var notBefor = DateTime.UtcNow;
-            var claims = await CreateClaimsAsync(user, notBefor);
-            SigningCredentials signingCredentials = CreateSigningCredentials();
-            var expiration = DateTime.UtcNow.AddMinutes(EXPIRATION_MINUTES);
-            var token = CreateToken(claims.ToArray(), notBefor, signingCredentials, expiration);
+            var expiration = DateTime.UtcNow.AddMinutes(Options.ExpirationInMinutes);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = await CreateClaimsAsync(user),
+                Expires = expiration,
+                SigningCredentials = CreateSigningCredentials(),
+                Issuer = Options.Issuer,
+                Audience = Options.Audience,
+            };
+            var handler = new JsonWebTokenHandler();
+            var token = handler.CreateToken(tokenDescriptor);
 
             return new TokenResponse(token, expiration);
-        }
-
-        private string CreateToken(Claim[] claims, DateTime notBefore, SigningCredentials signingCredentials, DateTime expiration)
-        {
-            var token = new JwtSecurityToken(
-                Options.Issuer,
-                Options.Audience,
-                claims,
-                notBefore,
-                expiration,
-                signingCredentials);
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
         private SigningCredentials CreateSigningCredentials() => new(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Options.Key!)),
                                                                         SecurityAlgorithms.HmacSha256);
 
-        private async Task<List<Claim>> CreateClaimsAsync(ApplicationUser user, DateTime notBefore)
+        private async Task<ClaimsIdentity> CreateClaimsAsync(ApplicationUser user)
         {
             var userRoles = await UserManager.GetRolesAsync(user);
             var permissions = await GetUserRolesPermissions(userRoles);
-            var claims = new List<Claim> {
-                //new Claim(JwtRegisteredClaimNames.Sub, Options.Subject!),
+            var claimsIdentity = new ClaimsIdentity([
+                new(JwtRegisteredClaimNames.Sub, Options.Subject!),
+                new("uid", user.Id),
+                new(JwtRegisteredClaimNames.Name, user.UserName!),
+                new(JwtRegisteredClaimNames.Email, user.Email!),
                 new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new(JwtRegisteredClaimNames.Iat, notBefore.ToString()),
-                new(ClaimTypes.NameIdentifier, user.Id),
-                new(ClaimTypes.Name, user.UserName!),
-                new(ClaimTypes.Email, user.Email!)
-           };
-            claims.AddRange(userRoles.Select(role => new Claim(ClaimTypes.Role, role)));
-            claims.AddRange(permissions.Select(permission => new Claim(Permissions.CLAIM_TYPE, permission)));
+           ]);
+            claimsIdentity.AddClaims(userRoles.Select(role => new Claim(ClaimTypes.Role, role)));
+            claimsIdentity.AddClaims(permissions.Select(permission => new Claim(Permissions.CLAIM_TYPE, permission)));
 
-            return claims;
+            return claimsIdentity;
         }
 
         private async Task<IList<string>> GetUserRolesPermissions(IList<string> userRoles)

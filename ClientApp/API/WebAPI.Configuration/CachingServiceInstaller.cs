@@ -12,7 +12,7 @@ namespace CleanArchitecture.WebAPI.Configuration
     {
         public void Install(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexerFactory.GetConnection(configuration));
+            services.AddSingleton<IRedisConnection, RedisConnection>();
             services.ConfigureOptions<RedisOptionsSetup>();
             services.ConfigureOptions<RedisConfigurationOptionsSetup>();
             services.ConfigureOptions<CrossCacheEntryOptionSetup>();

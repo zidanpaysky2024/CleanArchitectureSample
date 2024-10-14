@@ -6,5 +6,7 @@
         public string? Audience { get; init; }
         public string? Key { get; init; }
         public string? Subject { get; set; }
+        public int ExpirationInMinutes { get; init; }
+
     }
 }

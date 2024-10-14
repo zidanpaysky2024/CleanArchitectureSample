@@ -35,10 +35,10 @@ public class DistributedCacheService : IDistributedCacheService
 
     #region Constructor
     public DistributedCacheService(IOptions<RedisOptions> options,
-                                   IConnectionMultiplexer connection,
+                                   IRedisConnection redisConnection,
                                    ILogger<DistributedCacheService> logger)
     {
-        Connection = connection;
+        Connection = redisConnection.Connection;
         _logger = logger;
         _db = Connection.GetDatabase();
 

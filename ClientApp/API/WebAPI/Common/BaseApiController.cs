@@ -36,24 +36,28 @@ namespace CleanArchitecture.WebAPI.Common
 
         public ObjectResult Problem<T>(IResponse<T> response)
         {
-            return Problem($"{response.Error?.Message} {GetDetailsSubErrors(response)}",
-                          $"{response.Source} Path:{HttpContext.Request.Path}/{HttpContext.Request.Method} Host:{HttpContext.Request.Host} Protocol:{HttpContext.Request.Protocol}",
-                          response.StatusCode,
-                          response.Error!.Message);
-
-            static string GetDetailsSubErrors(IResponse<T> response)
+            var customProblemDetails = new CustomProblemDetails
             {
-                string detailsSubErrors = string.Empty;
+                Title = response.Error!.Message,
+                Status = response.StatusCode,
+                Detail = response.Error?.Message,
+                Instance = $"{response.Source} "
+                           + $"Path:{HttpContext.Request.Path}/{HttpContext.Request.Method} "
+                           + $"Host:{HttpContext.Request.Host} "
+                           + $"Protocol:{HttpContext.Request.Protocol}",
+                SubErrors = response.Error?.SubErrors ?? []
+            };
 
-                if (response.Error != null && response.Error.SubErrors != null && response.Error.SubErrors.Count > 0)
-                {
-                    detailsSubErrors = $"Inner Errors: {string.Join(',', response.Error.SubErrors.Select(s => $"{s.Key} - {s.Value}").ToList())}";
-                }
-
-                return detailsSubErrors;
-            }
+            return new ObjectResult(customProblemDetails)
+            {
+                StatusCode = response.StatusCode
+            };          
         }
 
+        public class CustomProblemDetails : ProblemDetails
+        {
+            public Dictionary<string, string> SubErrors { get; set; } = [];
+        }
 
         #endregion
     }

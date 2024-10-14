@@ -1,9 +1,6 @@
-version: '3.4'
-
 services:
   webapi:
     image: ${DOCKER_REGISTRY-}webapi
-    container_name: CleanArchitecture.webapi
     build:
       context: .
       dockerfile: ClientApp/API/WebAPI/Dockerfile
@@ -35,6 +32,3 @@ services:
      ports:
        - 6380:6379
 
-
-        
-    
