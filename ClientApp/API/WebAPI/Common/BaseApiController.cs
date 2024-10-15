@@ -51,7 +51,7 @@ namespace CleanArchitecture.WebAPI.Common
             return new ObjectResult(customProblemDetails)
             {
                 StatusCode = response.StatusCode
-            };          
+            };
         }
 
         public class CustomProblemDetails : ProblemDetails

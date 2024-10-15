@@ -1,7 +1,6 @@
 ﻿using CleanArchitecture.Application.Common.Abstracts.Account;
-using System.Security.Claims;
 using Microsoft.IdentityModel.JsonWebTokens;
-using static Azure.Core.HttpHeader;
+using System.Security.Claims;
 
 namespace CleanArchitecture.WebAPI.Services
 {

@@ -1,10 +1,10 @@
-﻿using CleanArchitecture.Application.Common.Security;
-using CleanArchitecture.Domain.Product.Events;
-using CleanArchitecture.Domain.Product.Entites;
-using CleanArchitecture.Domain.Constants;
-using CleanArchitecture.Application.Common.Abstracts.Persistence;
+﻿using CleanArchitecture.Application.Common.Abstracts.Persistence;
 using CleanArchitecture.Application.Common.Messaging;
 using CleanArchitecture.Application.Common.Models;
+using CleanArchitecture.Application.Common.Security;
+using CleanArchitecture.Domain.Constants;
+using CleanArchitecture.Domain.Product.Entites;
+using CleanArchitecture.Domain.Product.Events;
 
 namespace CleanArchitecture.Application.Products.Commands.AddProduct
 {

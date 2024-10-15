@@ -1,8 +1,7 @@
 ﻿using CleanArchitecture.Application.Common.Exceptions;
-using Microsoft.EntityFrameworkCore;
-using CleanArchitecture.Domain.Product.Entites;
-using CleanArchitecture.Persistence.EF;
 using CleanArchitecture.Application.Products.IEntitySets;
+using CleanArchitecture.Domain.Product.Entites;
+using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchitecture.Persistence.EF.EntitySets
 {

@@ -4,7 +4,6 @@ using CleanArchitecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using StackExchange.Redis;
 
 namespace CleanArchitecture.WebAPI.Configuration
 {

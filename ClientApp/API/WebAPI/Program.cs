@@ -4,8 +4,8 @@ using CleanArchitecture.Persistence.EF;
 using CleanArchitecture.WebAPI.Common;
 using CleanArchitecture.WebAPI.Configuration;
 using CleanArchitecture.WebAPI.Services;
-using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.OpenApi.Models;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
